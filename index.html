@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- link reference for separate style css
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+-->
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+
+    <div class="container">
+        <!-- Main Section Heading-->
+        <div class="row">
+            <div class="col-md-4">
+                <h1 class="contentTitle"> Crystals Collector! </h1>
+            </div>
+            <div class="col-md-8"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <p>You will be given a random number at the start of the game.</p>
+                <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score. </p>
+                <p>The value of each crystal is hidden from you until you click on it. </p>
+                <p>Each time when the game starts, the game will change the values of each crystal.</p>
+            </div>
+            <div class="col-md-6"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-3" id="randomNumBox"></div>
+            <div class="col-md-1" id="win-lose">
+                <p>Wins: </p>
+                <p>Loses: </p>
+            </div>
+            <div class="col-md-8"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-6" id="crystals">
+                <button type="button" class="crystal-images" id="crystal1">
+                <img src="assets/images/crystal1.jpg" class="images" alt="Crystal1-img">
+            </button>
+                <button type="button" class="crystal-images" class="images" id="crystal2">
+                <img src="assets/images/crystal2.jpg" class="images" alt="Crystal2-img">
+            </button>
+                <button type="button" class="crystal-images" id="crystal3">
+                <img src="assets/images/crystal3.jpg" class="images" alt="Crystal3-img">
+            </button>
+                <button type="button" class="crystal-images" id="crystal4">
+                <img src="assets/images/crystal4.jpg" class="images" alt="Crystal4-img">
+            </button>
+            </div>
+            <div class="col-md-6"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-3" id="total">
+                <p>Your total score is: </p>
+            </div>
+            <div class="col-md-9">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3" id="totalNum">
+
+            </div>
+            <div class="col-md-9">
+
+            </div>
+        </div>
+
+
+        <!--Popup box for win message-->
+        <div class="modal" tabindex="-1" role="dialog" id="winModal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">You WIN!</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--Javascript link-->
+    <script src="assets/javascript/game.js"></script>
+
+
+</body>
+
+</html>
