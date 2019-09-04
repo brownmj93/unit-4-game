@@ -2,3 +2,49 @@
     height: 100px;
     width: 100px;
 }
+
+body {
+    background: url("../images/beige-tiles.png");
+}
+
+.contentTitle {
+    background-color: #b5d8ff;
+    padding: 20px 10px 20px 10px;
+    margin: 10px 0 10px 0;
+}
+
+#instruction,
+#message,
+#reset {
+    background-color: #FFE4B5;
+    margin-bottom: 10px;
+}
+
+#randomNumBox {
+    background-color: #ffb5eb;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+#win-lose {
+    background-color: #b5ffdc;
+    margin-bottom: 10px;
+}
+
+#total {
+    margin-top: 10px;
+}
+
+#total,
+#totalNum {
+    background-color: #c9b5ff;
+    margin-bottom: 10px;
+}
+
+#reset {
+    padding: 15px;
+}
+
+#message {
+    padding: 15px 10px 15px 10px;
+}
